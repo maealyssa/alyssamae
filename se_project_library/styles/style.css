@@ -19,14 +19,19 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: flex-end;
   /* Add flex properties here */
 }
 
 .nav__logo {
+  height: 80px;
+  width: 57px;
 }
 
 .nav__links {
   /* Reset default list styles here */
+  list-style-type: none;
   margin: 8px 0 0;
 }
 
