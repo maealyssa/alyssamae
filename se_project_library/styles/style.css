@@ -4,6 +4,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin: auto;
   /* Add page class properties here */
 }
 
@@ -20,7 +21,7 @@
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   /* Add flex properties here */
 }
 
@@ -31,8 +32,13 @@
 
 .nav__links {
   /* Reset default list styles here */
+  display: flex;
   list-style-type: none;
   margin: 8px 0 0;
+  padding: 0;
+  column-gap: 20px;
+  align-items: center;
+  justify-items:auto;
 }
 
 .nav__link {
@@ -42,9 +48,18 @@
 }
 
 .header__title {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 500;
+  margin-top: 120px;
+  max-width: 601px;
 }
 
 .header__description {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 32px;
+  max-width: 532px;
 }
 
 .header__image {
