@@ -1,11 +1,11 @@
 .page {
+  /* Add page class properties here */
   min-width: 1100px;
   max-width: 1600px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  margin: auto;
-  /* Add page class properties here */
 }
 
 .header {
@@ -19,12 +19,10 @@
   box-sizing: border-box;
 }
 
-/* NAV BAR */
-
 .nav {
+  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
-  /* Add flex properties here */
 }
 
 .nav__logo {
@@ -35,12 +33,10 @@
 .nav__links {
   /* Reset default list styles here */
   display: flex;
-  list-style-type: none;
-  margin: 8px 0 0;
-  padding: 0;
   column-gap: 20px;
-  align-items: center;
-  justify-items:auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 8px 0 0;
 }
 
 .nav__link {
@@ -48,29 +44,32 @@
   text-decoration: none;
   font-weight: bold;
 }
-  /* HEADER */
+
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
+  max-width: 601px;
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin-top: 120px;
-  max-width: 601px;
+  margin: 128px 0 0 0;
 }
 
 .header__description {
+  max-width: 532px;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 32px;
-  max-width: 532px;
+  margin: 32px 0 0 0;
 }
 
 .header__image {
   z-index: 1;
   position: absolute;
   max-width: 636px;
-  right: 20px;
   top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -87,12 +86,14 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #1f69c9;
+}
+
 .header__address {
   margin: 0;
   color: #838383;
 }
-
-/* EVENTS SECTION */
 
 .events {
   padding: 100px 0 120px 80px;
@@ -164,12 +165,16 @@
   text-decoration: none;
 }
 
+.events__more:hover {
+  color: #1f69c9;
+}
+
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
-  position: relative; 
+  position: relative;
 }
 
 .events__image {
@@ -181,7 +186,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .person_name_feynman {
@@ -197,17 +202,16 @@
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
- 
 }
 
 .person_name_mitchell {
- bottom: 82px;
- left: 142px;
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
- top: 79px;
- left: 159px;
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
@@ -232,13 +236,10 @@
   margin: 0;
 }
 
-/* STAFF PICKS SECTION */
-
 .staff {
   padding: 100px 0 140px;
-  background-image: url('../images/staff_picks_background.jpg');
-  background-size: cover ;
-  background-repeat: no-repeat;
+  background-image: url(../images/staff_picks_background.jpg);
+  background-size: cover;
 }
 
 .staff__title {
@@ -246,7 +247,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .staff__subtitle {
@@ -255,18 +256,19 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
 }
 
+/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  list-style-type: none;
   padding: 0;
-  justify-content: center;
+  list-style-type: none;
 }
 
 .card {
@@ -274,9 +276,8 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  height: 420px;
   width: 360px;
-  flex-wrap: wrap;
+  height: 420px;
 }
 
 .card__content {
@@ -300,13 +301,12 @@
 }
 
 .card__footer {
-  margin: auto 0 0 0;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
+  margin-top: auto;
 }
-
-/* MEMBERSHIP SECTION */
 
 .membership {
   padding: 100px 0 140px;
@@ -326,14 +326,15 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
+  /* Add styles */
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 40px;
+  justify-content: center;
 }
 
 .step {
+  /* Add styles */
   flex-basis: 220px;
-  gap: 40px;
 }
 
 .step__title {
@@ -352,8 +353,6 @@
 .step__description {
   margin: 10px 0 0;
 }
-
-/* ABOUT SECTION */
 
 .about {
   padding: 100px 80px;
@@ -380,8 +379,16 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  gap: 32px;
   z-index: 1;
+}
+
+.about__paragraph {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -390,59 +397,77 @@
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  z-index: 0;
   top: -121px;
   left: -91px;
 }
 
-/* FOOTER SECTION */
-
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
-  color: #ffffff;
-  padding: 60px 80px;
+  color: #f2f2f2;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 60px 80px 60px 80px;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer__column_content_hours {
+  padding-right: 80px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  padding-left: 0;
 }
 
 .footer__logo {
+  width: 57px;
+  height: 80px;
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
-  font-size: 16px;
-  line-height: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
-  font-size: 20px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .footer__column-link {
+  display: flex;
+  align-items: center;
   color: white;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+  margin-top: 108px;
+  margin-bottom: 0px;
 }
