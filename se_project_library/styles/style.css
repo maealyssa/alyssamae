@@ -92,7 +92,7 @@
   color: #838383;
 }
 
-/* EVENTS */
+/* EVENTS SECTION */
 
 .events {
   padding: 100px 0 120px 80px;
@@ -232,8 +232,13 @@
   margin: 0;
 }
 
+/* STAFF PICKS SECTION */
+
 .staff {
   padding: 100px 0 140px;
+  background-image: url('../images/staff_picks_background.jpg');
+  background-size: cover ;
+  background-repeat: no-repeat;
 }
 
 .staff__title {
@@ -241,6 +246,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #ffffff;
 }
 
 .staff__subtitle {
@@ -249,15 +255,28 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  color: #ffffff;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__cards {
+  max-width: 760px;
+  margin: 68px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
 
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  height: 420px;
+  width: 360px;
+  flex-wrap: wrap;
 }
 
 .card__content {
@@ -281,11 +300,13 @@
 }
 
 .card__footer {
-  margin: 0;
+  margin: auto 0 0 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
 }
+
+/* MEMBERSHIP SECTION */
 
 .membership {
   padding: 100px 0 140px;
@@ -305,11 +326,14 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .step {
-  /* Add styles */
+  flex-basis: 220px;
+  gap: 40px;
 }
 
 .step__title {
@@ -329,6 +353,8 @@
   margin: 10px 0 0;
 }
 
+/* ABOUT SECTION */
+
 .about {
   padding: 100px 80px;
   background-color: #1f1f1f;
@@ -336,6 +362,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  gap: 120px;
 }
 
 .about__title {
@@ -344,6 +372,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -351,6 +380,8 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  gap: 32px;
+  z-index: 1;
 }
 
 .about__circle {
@@ -358,13 +389,24 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  top: -121px;
+  left: -91px;
 }
+
+/* FOOTER SECTION */
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__column_content_hours {
@@ -384,9 +426,12 @@
 }
 
 .footer__list-item {
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .footer__column-heading {
+  font-size: 20px;
 }
 
 .footer__column-link {
