@@ -22,19 +22,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a href="#events" class="nav__link">Events</a>
+              <a href="#link-events" class="nav__link">Events</a>
             </li>
             <li>
-              <a href="#staff-picks" class="nav__link">Staff picks</a>
+              <a href="#link-staff-picks" class="nav__link">Staff picks</a>
             </li>
             <li>
-              <a href="#member" class="nav__link">Become a member</a>
+              <a href="#link-member" class="nav__link">Become a member</a>
             </li>
             <li>
-              <a href="#about" class="nav__link">About</a>
+              <a href="#link-about" class="nav__link">About</a>
             </li>
             <li>
-              <a href="#footer" class="nav__link">Contacts</a>
+              <a href="#link-footer" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -50,14 +50,14 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a class="header__link" href="#link-about">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
       </header>
       <main class="content">
-        <section class="events" id="events">
+        <section class="events" id="link-events">
           <section class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -114,7 +114,7 @@
           </div>
         </section>
 
-        <section class="staff" id="staff-picks">
+        <section class="staff" id="link-staff-picks">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
@@ -186,7 +186,7 @@
           </ul>
         </section>
 
-        <section class="membership" id="member">
+        <section class="membership" id="link-member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -242,7 +242,7 @@
           </ul>
         </section>
 
-        <section class="about" id="about">
+        <section class="about" id="link-about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -266,20 +266,20 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer" id="footer">
+      <footer class="footer" id="link-footer">
         <div class="footer__columns">
-          <div class="footer__column footer__logo">
-            <img src="images/logo_white.svg" alt="white logo">
+          <div class="footer__column">
+            <img class="footer__logo" src="images/logo_white.svg" alt="white logo">
           </div>
           <div class="footer__column footer__column_content_hours">
-            <h3 class="footer__column-heading">Hours</h3>
+            <h4 class="footer__column-heading">Hours</h4>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays: 9am - 8pm</li>
               <li class="footer__list-item">Weekends: 10am - 6pm</li>
             </ul>
           </div>
           <div class="footer__column footer__column_content_social">
-            <h3 class="footer__column-heading">Social Media</h3>
+            <h4 class="footer__column-heading">Social Media</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__column-link" href="#">

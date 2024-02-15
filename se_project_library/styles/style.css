@@ -238,8 +238,7 @@
 
 .staff {
   padding: 100px 0 140px;
-  background-image: url(../images/staff_picks_background.jpg);
-  background-size: cover;
+  background: url(../images/staff_picks_background.jpg);
 }
 
 .staff__title {
@@ -434,14 +433,9 @@
   margin: 0;
 }
 
-.footer__list-item {
-  margin-bottom: 16px;
-  padding: 0;
-}
-
-.footer__list-item:last-of-type {
-  margin-bottom: 0;
-}
+.footer__list-item:not(:last-of-type) {
+  margin-bottom: 16px; 
+} 
 
 .footer__column-heading {
   padding-bottom: 20px;
